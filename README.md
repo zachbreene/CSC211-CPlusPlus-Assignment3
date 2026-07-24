@@ -1,6 +1,8 @@
 <h1 align=center> C++ Algorithm Implementations </h1>
 <h2 align=center> A CSC211: Computer Programming by Zachary Breene </h2>
 <h4 align=center> Created at The University of Rhode Island, March 2021 </h4>
+</n>
+<h4 align=center> *NO AI WAS USED IN THE CREATION OF THIS PROJECT* </h4>
 
 ## Introduction
 A collection of small C++ command-line programs designed to demonstrate fundamental programming concepts, data manipulation, and algorithmic problem-solving. These independent programs handle a variety of tasks including string parsing, mathematical calculations, sequence verification, and input stream manipulation.
