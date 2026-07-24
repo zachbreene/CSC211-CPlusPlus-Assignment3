@@ -3,7 +3,7 @@
 
 std::string ascii(std::string let){
     int i;
-    // Standardizes string to uppercase for case-insensitive comparison[cite: 16].
+    // Standardizes string to uppercase for case-insensitive comparison.
     for(i = 0; i <= let.length() - 1; i++){
         if(let[i] >= 97){
             let[i] = let[i] - 32;
@@ -17,7 +17,7 @@ std::string plus(std::string str){
     std::string k;
     bool plus = false;
     
-    // Ignores characters between '+' and '@' to handle Gmail aliases[cite: 16].
+    // Ignores characters between '+' and '@' to handle Gmail aliases.
     for(i = 0; i < length; i++){
         if(str[i] == '+'){
             plus = true;
@@ -35,7 +35,7 @@ std::string plus(std::string str){
 std::string dots(std::string str){
     int i, length = str.length();
     std::string k;
-    // Strips periods out of the string, as Gmail ignores periods in usernames[cite: 16].
+    // Strips periods out of the string, as Gmail ignores periods in usernames.
     for(i = 0; i < length; i++){
         if(str[i] != '.'){
             k += str[i];
@@ -48,7 +48,7 @@ void whitespace(std::string str, std::string &x, std::string &y){
     int i, length = str.length();
     bool separate = false;
     
-    // Splits the input string by the space character to separate the two emails for comparison[cite: 16].
+    // Splits the input string by the space character to separate the two emails for comparison.
     for(i = 0; i < length; i++){
         if(str[i] == ' '){
             separate = true;
@@ -68,14 +68,14 @@ int main()
     std::string x, y, str;
     std::getline(std::cin, str);
     
-    // Applies normalizations to process the emails[cite: 16].
+    // Applies normalizations to process the emails.
     str = ascii(str);
     str = plus(str);
     str = dots(str);
     whitespace(str, x, y);
     
     if(x == y){
-        std::cout << "True" << std::endl; // The emails route to the same inbox[cite: 16].
+        std::cout << "True" << std::endl; // The emails route to the same inbox.
     }
     else{
         std::cout << "False" << std::endl;
