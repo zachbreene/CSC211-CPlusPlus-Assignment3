@@ -7,11 +7,11 @@ int main()
     std::string str;
     std::getline(std::cin, str);
     
-    // Initializes the integer array to zeroes[cite: 13].
+    // Initializes the integer array to zeroes.
     for(i = 0; i < 100; i++){
         x[i] = 0;
     }
-    // Calculates a simple hash by summing the ASCII values of the string's characters[cite: 13].
+    // Calculates a simple hash by summing the ASCII values of the string's characters.
     for(i = 0; i < str.length(); i++){
         x[str[i]];
         sum += (int)str[i];
