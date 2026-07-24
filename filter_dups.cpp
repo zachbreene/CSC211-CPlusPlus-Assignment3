@@ -3,9 +3,9 @@
 
 std::string dupe(std::string str){
     int i = 0;
-    char x = str[0]; // Stores the first character to start comparisons[cite: 12].
+    char x = str[0]; // Stores the first character to start comparisons.
     for(i = 1; i < str.length() + 1; i++){
-        // If the current character is different from the previous, the previous character is printed[cite: 12].
+        // If the current character is different from the previous, the previous character is printed.
         if(x != str[i]){
             std::cout << str[i - 1];
         }
